@@ -1,3 +1,8 @@
+body {
+  background-color: grey;
+  z-index: -1;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -7,10 +12,11 @@
 .todayContainer {
   border: 1px solid black;
   width: 600px;
-  height: 400px;
+  height: 450px;
   border-radius: 20px;
   margin: 100px 0 20px 0;
   position: relative;
+  background-color: wheat;
 }
 
 .weekContainer {
@@ -43,6 +49,7 @@
   border: 1px black solid;
   width: 50px;
   margin-left: 10px;
+  margin-top: 20px;
   align-items: center;
   padding: 15px;
   border-radius: 10px;
@@ -71,4 +78,17 @@
 .days img {
   width: 30px;
   margin-top: 15px;
+}
+
+.info {
+  line-height: 30px;
+  margin-left: 120px;
+
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-right: 40px;
+  background-color: rgba(192, 189, 189, 0.562);
+}
+.info ul {
+  list-style: none;
 }
