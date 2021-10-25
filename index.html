@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="todayContainer">
+        <div class="location-date">
+          <h3>science park</h3>
+          <h3>Sun , 25 October 15:30</h3>
+        </div>
+        <div class="imgWeather">
+          <span> <img src="sun.png" alt="" /></span>
+          <span class="degree"><h2>18</h2> </span>
+        </div>
+        <div class="todayDegree">
+          <div class="hourlyDegree"></div>
+        </div>
+      </div>
+
+      <div class="weekContainer">
+        <div class="week">
+          <div class="days">
+            <span id="day"><h3>monday</h3></span>
+            <span id="icon"> <img src="sun.png" alt="" /> </span>
+            <span id="deg"> <h3>18 / 20</h3></span>
+          </div>
+
+          <div class="days">
+            <span id="day"><h3>Tuesday</h3></span>
+            <span id="icon"> <img src="sun.png" alt="" /> </span>
+            <span id="deg"> <h3>18 / 20</h3></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

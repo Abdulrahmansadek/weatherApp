@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todayContainer {
+  border: 1px solid black;
+  width: 600px;
+  height: 400px;
+  border-radius: 20px;
+  margin: 100px 0 20px 0;
+  position: relative;
+}
+
+.weekContainer {
+  border: 1px solid black;
+  width: 600px;
+  height: 400px;
+  border-radius: 20px;
+}
+
+.location-date {
+  padding: 15px;
+}
+.imgWeather {
+  display: flex;
+}
+.imgWeather img {
+  width: 100px;
+  padding-left: 15px;
+  margin-right: 10px;
+}
+.degree {
+  font-size: 30px;
+}
+.todayDegree {
+  display: flex;
+}
+.hourlyDegree {
+  display: flex;
+  flex-direction: column;
+  border: 1px black solid;
+  width: 50px;
+  margin-left: 10px;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+.hourlyDegree img {
+  width: 50px;
+}
+#time {
+  margin-bottom: 10px;
+}
+#degreeDay {
+  margin-top: 10px;
+}
+
+.week {
+  display: flex;
+  flex-direction: column;
+}
+.days {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  border: 1px solid black;
+  margin: 10px;
+}
+.days img {
+  width: 30px;
+  margin-top: 15px;
+}
