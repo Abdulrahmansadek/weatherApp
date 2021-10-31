@@ -7,6 +7,9 @@ export const update = setInterval(() => {
   const day = time.getDay();
   const hour = time.getHours();
   const minutes = time.getMinutes();
-
-  dateAndTime.innerHTML = `<p>${weekDays[day]} , ${month} ${months[month]} , ${hour} : ${minutes}</p>`;
+  if (minutes < 10) {
+    dateAndTime.innerHTML = `<p>${weekDays[day]} , ${month} ${months[month]} , ${hour}:0${minutes}</p>`;
+  } else {
+    dateAndTime.innerHTML = `<p>${weekDays[day]} , ${month} ${months[month]} , ${hour}:${minutes}</p>`;
+  }
 }, 1000);
