@@ -1,4 +1,4 @@
-import { days, weeks } from "./constants.js";
+import { weeks } from "../constants.js";
 
 export const showDailyWeather = function (data) {
   const daily = data.daily;
@@ -6,6 +6,7 @@ export const showDailyWeather = function (data) {
     const { day, night } = d.temp;
     var day1 = getDayName(d.dt, "nl-NL");
     const { icon } = d.weather[0];
+
     const dayEl = Math.floor(day);
     const nightEl = Math.floor(night);
     weeks.innerHTML += `<div class="days">
