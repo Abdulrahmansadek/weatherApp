@@ -1,30 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
 body {
   background-color: grey;
-  z-index: -1;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 10px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  margin: 0 auto;
+  width: 650px;
+  font-weight: bold;
+}
+.cloudy-day {
+  background-image: url("assets/1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: 900;
+  background-position: bottom;
+}
+.cloudy-night {
+}
+.rainy-day {
+  background-image: url("assets/pexels-ave-calvar-martinez-4297438.jpg");
+}
+.rainy-night {
+}
+.clear-day {
+  background-image: url("assets/after_noon.png.webp");
+}
+.clear-night {
+  background-image: url("assets/night.webp");
 }
 
 .todayContainer {
-  border: 1px solid black;
   width: 600px;
   height: 450px;
   border-radius: 20px;
   margin: 100px 0 20px 0;
   position: relative;
-  background-color: wheat;
+  background-color: rgba(194, 193, 193, 0.534);
+  padding: 15px;
+  z-index: 1;
+  font-size: 13px;
+}
+
+.darkGrey {
+  background-color: rgba(141, 140, 140, 0.911);
 }
 
 .weekContainer {
-  border: 1px solid black;
   width: 600px;
-  height: 600px;
+  height: 500px;
   border-radius: 20px;
   overflow: scroll;
+  padding: 15px;
+  margin-bottom: 10px;
+  z-index: 1;
+  background-color: rgba(194, 193, 193, 0.548);
 }
 
 .location-date {
@@ -44,6 +83,8 @@ body {
 .todayDegree {
   display: flex;
   overflow: scroll;
+  font-size: 18px;
+  font-weight: 900;
 }
 
 .hourlyDegree {
@@ -74,26 +115,27 @@ body {
 .days {
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
   align-items: center;
-  border: 1px solid black;
-  margin: 10px;
-  background-color: rgba(207, 205, 205, 0.548);
+  font-size: 16px;
 }
 .days img {
   width: 50px;
-  margin-top: 15px;
 }
 
 .info {
+  padding: 3px;
+  height: 150px;
+  width: 200px;
   line-height: 30px;
-  margin-left: 120px;
-
-  border: 1px solid black;
+  margin-left: 200px;
   border-radius: 10px;
-  padding-right: 40px;
   background-color: rgba(192, 189, 189, 0.562);
 }
 .info ul {
   list-style: none;
+}
+
+#error {
+  color: red;
+  text-align: center;
 }

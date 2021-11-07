@@ -1,7 +1,8 @@
-import { degree } from "./constants.js";
+import { degree } from "../constants.js";
 
 export const showHourlyWeather = function (data) {
   const hourlyTemps = data.hourly;
+
   hourlyTemps.forEach((hourlyTemp) => {
     const { temp, dt } = hourlyTemp;
     const { icon } = hourlyTemp.weather[0];

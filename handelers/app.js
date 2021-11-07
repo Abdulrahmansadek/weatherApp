@@ -5,13 +5,13 @@ import {
   days,
   apiKey,
   imgWeather,
-} from "./constants.js";
-import { weekDays } from "./data.js";
-import { update } from "./updateTimeAndDate.js";
-import { showWeather } from "./showWeather.js";
-import { showHourlyWeather } from "./showHourlyWeather.js";
-import { showDailyWeather } from "./showDailyWeather.js";
-
+} from "../constants.js";
+import { weekDays } from "../assets/data.js";
+import { update } from "../dateAndtime/updateTimeAndDate.js";
+import { showWeather } from "../initialize/showWeather.js";
+import { showHourlyWeather } from "../hourlyWeather/showHourlyWeather.js";
+import { showDailyWeather } from "../showDaily/showDailyWeather.js";
+import { errorPage } from "../error/errorPage.js";
 export const getWeather = function () {
   navigator.geolocation.getCurrentPosition((position) => {
     const { latitude, longitude } = position.coords;
@@ -21,6 +21,9 @@ export const getWeather = function () {
       .then((data) => {
         showWeather(data);
         showDailyWeather(data);
+      })
+      .catch((err) => {
+        errorPage(err);
       });
 
     const hourlyWeather = function () {
@@ -29,9 +32,13 @@ export const getWeather = function () {
         .then((res) => res.json())
         .then((data) => {
           showHourlyWeather(data);
+        })
+        .catch((err) => {
+          errorPage(err);
         });
     };
     hourlyWeather();
   });
 };
+
 getWeather();
