@@ -172,6 +172,19 @@ body {
   }
 }
 @media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    margin: 0 auto;
+    width: 550px;
+    font-weight: bold;
+  }
   .weekContainer {
     width: 500px;
     height: 500px;
