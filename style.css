@@ -142,3 +142,32 @@ body {
   color: red;
   text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+  .weekContainer {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: scroll;
+    padding: 15px;
+    margin-bottom: 10px;
+    z-index: 1;
+    background-color: rgba(194, 193, 193, 0.548);
+  }
+  .todayContainer {
+    width: 500px;
+    height: 450px;
+    border-radius: 20px;
+    margin: 100px 0 20px 0;
+    position: relative;
+    background-color: rgba(194, 193, 193, 0.534);
+    padding: 15px;
+    z-index: 1;
+    font-size: 13px;
+  }
+  .info ul {
+    padding: 3px;
+    height: 70px;
+    border-radius: 10px;
+  }
+}
