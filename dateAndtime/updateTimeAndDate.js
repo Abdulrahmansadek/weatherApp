@@ -6,7 +6,6 @@ const month = time.getMonth();
 const day = time.getDay();
 export const hour = time.getHours();
 const minutes = time.getMinutes();
-
 export const update = setInterval(() => {
   if (minutes < 10) {
     dateAndTime.innerHTML = `<p>${weekDays[day]} , ${month} ${months[month]} , ${hour}:0${minutes}</p>`;

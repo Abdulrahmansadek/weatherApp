@@ -12,12 +12,11 @@ export const showWeather = function (data) {
   const { temp, feels_like, humidity, pressure, wind_speed, sunrise, sunset } =
     data.current;
   const { icon, main } = data.current.weather[0];
-  console.log(sunrise, sunset, data);
 
   const convertSunSet = sunset * 1000;
-  var setTimeOfSunRise = new Date(convertSunSet);
-  var sunSetTime = setTimeOfSunRise.getHours();
-  console.log(sunSetTime);
+  const setTimeOfSunRise = new Date(convertSunSet);
+  const sunSetTime = setTimeOfSunRise.getHours();
+  console.log(sunSetTime, hour, main);
 
   location.textContent = timezone;
   const tempEl = Math.floor(temp);
@@ -33,8 +32,11 @@ export const showWeather = function (data) {
     <li>Feels like : ${feels_like} º</li>
     <li>Wind Speed : ${wind_speed}</li>
     </ul> </span>`;
+
   if (main === "Clouds" && hour <= sunSetTime) {
     container.classList.add("cloudy-day");
+  } else if (main === "Clouds" && hour >= sunSetTime) {
+    container.classList.add("cloudy-night");
   } else if (main === "Rain" && hour <= sunSetTime) {
     container.classList.add("rainy-day");
     todayContainer.classList.add("darkGrey");

@@ -26,6 +26,7 @@ body {
   background-position: bottom;
 }
 .cloudy-night {
+  background-image: url("assets/night.webp");
 }
 .rainy-day {
   background-image: url("assets/pexels-ave-calvar-martinez-4297438.jpg");
@@ -115,11 +116,13 @@ body {
 .days {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   font-size: 16px;
 }
 .days img {
   width: 50px;
+}
+.days span {
+  width: 90px;
 }
 
 .info {
