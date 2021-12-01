@@ -1,4 +1,4 @@
-import { dateAndTime } from "../constants.js";
+import { dateAndTime } from "../utils/constants.js";
 import { months, weekDays } from "../assets/data.js";
 
 const time = new Date();

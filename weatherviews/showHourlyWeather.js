@@ -1,4 +1,4 @@
-import { degree } from "../constants.js";
+import { degree } from "../utils/constants.js";
 
 export const showHourlyWeather = function (data) {
   const hourlyTemps = data.hourly;

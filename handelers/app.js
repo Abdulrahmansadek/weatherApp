@@ -5,12 +5,12 @@ import {
   days,
   apiKey,
   imgWeather,
-} from "../constants.js";
+} from "../utils/constants.js";
 import { weekDays } from "../assets/data.js";
 import { update } from "../dateAndtime/updateTimeAndDate.js";
 import { showWeather } from "../initialize/showWeather.js";
-import { showHourlyWeather } from "../hourlyWeather/showHourlyWeather.js";
-import { showDailyWeather } from "../showDaily/showDailyWeather.js";
+import { showHourlyWeather } from "../weatherviews/showHourlyWeather.js";
+import { showDailyWeather } from "../weatherviews/showDailyWeather.js";
 import { errorPage } from "../error/errorPage.js";
 export const getWeather = function () {
   navigator.geolocation.getCurrentPosition((position) => {
