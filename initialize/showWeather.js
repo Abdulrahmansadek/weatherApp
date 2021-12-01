@@ -4,7 +4,7 @@ import {
   container,
   todayContainer,
   weekContainer,
-} from "../constants.js";
+} from "../utils/constants.js";
 import { getWeather } from "../handelers/app.js";
 import { hour } from "../dateAndtime/updateTimeAndDate.js";
 export const showWeather = function (data) {

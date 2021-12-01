@@ -1,4 +1,4 @@
-import { weeks } from "../constants.js";
+import { weeks } from "../utils/constants.js";
 
 export const showDailyWeather = function (data) {
   const daily = data.daily;
