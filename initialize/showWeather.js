@@ -6,7 +6,7 @@ import {
   weekContainer,
 } from "../utils/constants.js";
 import { getWeather } from "../handelers/app.js";
-import { hour } from "../dateAndtime/updateTimeAndDate.js";
+import { hour } from "../components/updateTimeAndDate.js";
 export const showWeather = function (data) {
   const { timezone } = data;
   const { temp, feels_like, humidity, pressure, wind_speed, sunrise, sunset } =

@@ -7,7 +7,7 @@ import {
   imgWeather,
 } from "../utils/constants.js";
 import { weekDays } from "../assets/data.js";
-import { update } from "../dateAndtime/updateTimeAndDate.js";
+import { update } from "../components/updateTimeAndDate.js";
 import { showWeather } from "../initialize/showWeather.js";
 import { showHourlyWeather } from "../weatherviews/showHourlyWeather.js";
 import { showDailyWeather } from "../weatherviews/showDailyWeather.js";
