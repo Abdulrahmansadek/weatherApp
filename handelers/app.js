@@ -25,20 +25,23 @@ export const getWeather = function () {
       .catch((err) => {
         errorPage(err);
       });
-
-    const hourlyWeather = function () {
-      const dailyUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=daily&units=metric&appid=${apiKey}`;
-      fetch(dailyUrl)
-        .then((res) => res.json())
-        .then((data) => {
-          showHourlyWeather(data);
-        })
-        .catch((err) => {
-          errorPage(err);
-        });
-    };
-    hourlyWeather();
   });
 };
 
 getWeather();
+const hourlyWeather = function () {
+  navigator.geolocation.getCurrentPosition((position) => {
+    const { latitude, longitude } = position.coords;
+
+    const dailyUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=daily&units=metric&appid=${apiKey}`;
+    fetch(dailyUrl)
+      .then((res) => res.json())
+      .then((data) => {
+        showHourlyWeather(data);
+      })
+      .catch((err) => {
+        errorPage(err);
+      });
+  });
+};
+hourlyWeather();
