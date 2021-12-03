@@ -5,8 +5,18 @@ import {
   todayContainer,
   weekContainer,
 } from "../utils/constants.js";
-import { getWeather } from "../handelers/app.js";
+
 import { hour } from "../components/updateTimeAndDate.js";
+
+const menuBtn = document.createElement("button");
+const btnTxt = document.createElement("h1");
+
+container.appendChild(menuBtn);
+menuBtn.appendChild(btnTxt);
+menuBtn.classList.add("menu-btn");
+btnTxt.classList.add("btn-text");
+btnTxt.textContent = "+";
+
 export const showWeather = function (data) {
   const { timezone } = data;
   const { temp, feels_like, humidity, pressure, wind_speed, sunrise, sunset } =
