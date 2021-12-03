@@ -17,6 +17,7 @@ body {
   margin: 0 auto;
   width: 650px;
   font-weight: bold;
+  position: relative;
 }
 .cloudy-day {
   background-image: url("assets/1.webp");
@@ -31,8 +32,7 @@ body {
 .rainy-day {
   background-image: url("assets/pexels-ave-calvar-martinez-4297438.jpg");
 }
-.rainy-night {
-}
+
 .clear-day {
   background-image: url("assets/after_noon.png.webp");
 }
@@ -141,6 +141,23 @@ body {
 #error {
   color: red;
   text-align: center;
+}
+
+.menu-btn {
+  position: absolute;
+  border: none;
+  left: 15px;
+  margin-top: 10px;
+  background-color: inherit;
+}
+.btn-text {
+  color: black;
+  font-weight: lighter;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+}
+.menu-btn:hover {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
