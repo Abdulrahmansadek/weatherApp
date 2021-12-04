@@ -9,8 +9,8 @@ import {
 import { weekDays } from "../assets/data.js";
 import { update } from "../components/updateTimeAndDate.js";
 import { showWeather } from "../initialize/showWeather.js";
-import { showHourlyWeather } from "../weatherviews/showHourlyWeather.js";
-import { showDailyWeather } from "../weatherviews/showDailyWeather.js";
+import { showHourlyWeather } from "../views/showHourlyWeather.js";
+import { showDailyWeather } from "../views/showDailyWeather.js";
 import { errorPage } from "../error/errorPage.js";
 export const getWeather = function () {
   navigator.geolocation.getCurrentPosition((position) => {
