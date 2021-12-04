@@ -45,6 +45,8 @@ export const showWeather = function (data) {
 
   if (main === "Clouds" && hour <= sunSetTime) {
     container.classList.add("cloudy-day");
+  } else if (main === "Fog") {
+    container.classList.add("cloudy-day");
   } else if (main === "Clouds" && hour >= sunSetTime) {
     container.classList.add("cloudy-night");
   } else if (main === "Rain" && hour <= sunSetTime) {
