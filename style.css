@@ -17,7 +17,6 @@ body {
   margin: 0 auto;
   width: 650px;
   font-weight: bold;
-  position: relative;
 }
 .cloudy-day {
   background-image: url("assets/1.webp");
@@ -146,7 +145,7 @@ body {
 .menu-btn {
   position: absolute;
   border: none;
-  left: 15px;
+  left: 420px;
   margin-top: 10px;
   background-color: inherit;
 }
@@ -158,6 +157,27 @@ body {
 }
 .menu-btn:hover {
   cursor: pointer;
+}
+.left-arrow {
+  color: black;
+  padding: 15px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(174, 172, 172, 0.397);
+  position: absolute;
+  margin-top: 80px;
+  font-family: "Roboto", sans-serif;
+}
+.right-arrow {
+  color: black;
+  padding: 15px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(174, 172, 172, 0.397);
+  position: absolute;
+  margin-top: 80px;
+  right: 2px;
+  font-family: "Roboto", sans-serif;
 }
 
 @media only screen and (max-width: 600px) {
@@ -186,6 +206,13 @@ body {
     padding: 3px;
     height: 70px;
     border-radius: 10px;
+  }
+  .menu-btn {
+    position: absolute;
+    border: none;
+    left: 40px;
+    margin-top: 10px;
+    background-color: inherit;
   }
 }
 @media only screen and (max-width: 600px) {

@@ -1,5 +1,15 @@
 import { degree } from "../utils/constants.js";
 
+const leftArrow = document.createElement("div");
+degree.appendChild(leftArrow);
+leftArrow.textContent = "←";
+leftArrow.classList.add("left-arrow");
+
+const rightArrow = document.createElement("div");
+degree.appendChild(rightArrow);
+rightArrow.textContent = "→";
+rightArrow.classList.add("right-arrow");
+
 export const showHourlyWeather = function (data) {
   const hourlyTemps = data.hourly;
 
