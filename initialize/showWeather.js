@@ -12,7 +12,7 @@ const menuBtn = document.createElement("button");
 
 container.appendChild(menuBtn);
 menuBtn.classList.add("menu-btn");
-menuBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+menuBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-list" viewBox="0 0 16 16">
 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
 </svg>`;
 
@@ -57,5 +57,7 @@ export const showWeather = function (data) {
     container.classList.add("clear-day ");
   } else if (main === "Clear" && hour > sunSetTime) {
     container.classList.add("clear-night ");
+  } else if (main === "Drizzle") {
+    container.classList.add("rainy-day");
   }
 };

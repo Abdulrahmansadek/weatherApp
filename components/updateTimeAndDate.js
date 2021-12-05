@@ -8,8 +8,8 @@ export const hour = time.getHours();
 const minutes = time.getMinutes();
 export const update = setInterval(() => {
   if (minutes < 10) {
-    dateAndTime.innerHTML = `<p>${weekDays[day]} , ${day} ${months[month]} , ${hour}:0${minutes}</p>`;
+    dateAndTime.innerHTML = `<h4>${weekDays[day]} , ${day} ${months[month]} , ${hour}:0${minutes}</h4>`;
   } else {
-    dateAndTime.innerHTML = `<p>${weekDays[day]} , ${day} ${months[month]} , ${hour}:${minutes}</p>`;
+    dateAndTime.innerHTML = `<h4>${weekDays[day]} , ${day} ${months[month]} , ${hour}:${minutes}</h4>`;
   }
 }, 1000);

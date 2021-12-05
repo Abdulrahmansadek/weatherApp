@@ -11,7 +11,8 @@ import { update } from "../components/updateTimeAndDate.js";
 import { showWeather } from "../initialize/showWeather.js";
 import { showHourlyWeather } from "../views/showHourlyWeather.js";
 import { showDailyWeather } from "../views/showDailyWeather.js";
-import { errorPage } from "../error/errorPage.js";
+import { errorPage } from "../views/errorPage.js";
+import { menuBar } from "../listeners/menuBtn.js";
 export const getWeather = function () {
   navigator.geolocation.getCurrentPosition((position) => {
     const { latitude, longitude } = position.coords;
@@ -45,3 +46,16 @@ const hourlyWeather = function () {
   });
 };
 hourlyWeather();
+
+const citiesWeather = function () {
+  const cityWeather = `https://api.openweathermap.org/data/2.5/weather?&units=metric&q=london&appid=${apiKey}`;
+  fetch(cityWeather)
+    .then((res) => res.json())
+    .then((data) => {
+      menuBar(data);
+    })
+    .catch((err) => {
+      errorPage(err);
+    });
+};
+citiesWeather();

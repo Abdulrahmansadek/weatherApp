@@ -30,7 +30,8 @@ body {
   background-image: url("assets/night.webp");
 }
 .rainy-day {
-  background-image: url("assets/pexels-ave-calvar-martinez-4297438.jpg");
+  background-image: url("assets/xianyu-hao-n6pu9ZDOaN4-unsplash.jpg");
+  background-size: cover;
 }
 
 .clear-day {
@@ -156,6 +157,7 @@ body {
 .menu-btn:hover {
   cursor: pointer;
 }
+
 .left-arrow {
   color: black;
   padding: 15px;
@@ -209,6 +211,43 @@ body {
   display: none;
 }
 
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cities-container {
+  display: flex;
+  flex-direction: column;
+}
+.city {
+  border-radius: 4px;
+  width: 350px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 10px;
+  position: relative;
+  background-color: rgba(11, 10, 10, 0.31);
+}
+.city img {
+  width: 50px;
+}
+
+.remove-btn button {
+  position: absolute;
+  right: 2px;
+  border: none;
+  background-color: inherit;
+  color: red;
+  cursor: pointer;
+}
+.icon-temp {
+  display: flex;
+  margin-left: 100px;
+}
+.icon-temp h3 {
+  margin-left: 7px;
+}
 @media only screen and (max-width: 600px) {
   .weekContainer {
     width: 500px;
