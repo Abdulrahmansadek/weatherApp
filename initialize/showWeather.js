@@ -5,7 +5,7 @@ import {
   todayContainer,
   weekContainer,
 } from "../utils/constants.js";
-import { menuBar } from "../listeners/menuBtn.js";
+import { menuBar } from "../listeners/menuPage.js";
 import { hour } from "../components/updateTimeAndDate.js";
 
 const menuBtn = document.createElement("button");
