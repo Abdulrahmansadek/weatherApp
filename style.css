@@ -194,7 +194,7 @@ body {
 }
 
 .search-bar input {
-  width: 250px;
+  width: 300px;
   height: 35px;
   border-radius: 3px;
   margin: 15px;
@@ -206,6 +206,7 @@ body {
   font-size: 15px;
   cursor: pointer;
   width: 30px;
+  color: red;
 }
 .close {
   display: none;
@@ -222,9 +223,10 @@ body {
 }
 .city {
   border-radius: 4px;
+  margin: 10px;
   width: 350px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 10px 10px;
   position: relative;
   background-color: rgba(11, 10, 10, 0.31);
@@ -233,9 +235,10 @@ body {
   width: 50px;
 }
 
-.remove-btn button {
+.remove-btn {
   position: absolute;
   right: 2px;
+  top: 1px;
   border: none;
   background-color: inherit;
   color: red;
