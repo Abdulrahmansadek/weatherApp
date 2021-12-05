@@ -10,3 +10,4 @@ export const todayContainer = document.querySelector(".todayContainer");
 export const weekContainer = document.querySelector(".weekContainer");
 
 export const apiKey = "70c71b66eb8310e5f5318cdf7bcb0d69";
+export const input = document.getElementById("search");
