@@ -47,15 +47,4 @@ const hourlyWeather = function () {
 };
 hourlyWeather();
 
-const citiesWeather = function () {
-  const cityWeather = `https://api.openweathermap.org/data/2.5/weather?&units=metric&q=london&appid=${apiKey}`;
-  fetch(cityWeather)
-    .then((res) => res.json())
-    .then((data) => {
-      menuBar(data);
-    })
-    .catch((err) => {
-      errorPage(err);
-    });
-};
-citiesWeather();
+

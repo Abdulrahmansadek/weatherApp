@@ -14,7 +14,6 @@ export const menuBar = () => {
   </div>
    
    `;
-  const x = document.querySelector("#search");
 
   const closeBtn = document.querySelector(".close-btn");
   closeBtn.addEventListener("click", () => {
