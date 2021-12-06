@@ -7,8 +7,10 @@ import {
 } from "../utils/constants.js";
 import { menuBar } from "../listeners/menuPage.js";
 import { hour } from "../components/updateTimeAndDate.js";
+import { menuPage } from "../views/showCityWeather.js";
 
 const menuBtn = document.createElement("button");
+menuPage.classList.add("close");
 
 container.appendChild(menuBtn);
 menuBtn.classList.add("menu-btn");

@@ -18,19 +18,19 @@ searchBar.appendChild(closeBtn);
 closeBtn.textContent = "X";
 
 export const showCityWeather = (data) => {
-  console.log(data.main);
+  console.log(data);
   const citiesContainer = document.createElement("div");
   pageContainer.appendChild(citiesContainer);
   citiesContainer.classList.add("cities-container");
   const city = document.createElement("div");
   citiesContainer.appendChild(city);
   city.classList.add("city");
-  const cityName = document.createElement("h3");
+  const cityName = document.createElement("h4");
   const cityIcon = document.createElement("img");
-  const cityTemp = document.createElement("h3");
+  const cityTemp = document.createElement("h4");
   const removeBtn = document.createElement("button");
   city.append(cityName, cityIcon, cityTemp, removeBtn);
-  cityName.textContent = search.value;
+  cityName.textContent = data.name;
   cityIcon.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
@@ -39,4 +39,9 @@ export const showCityWeather = (data) => {
   cityTemp.textContent = `${data.main.temp}º`;
   removeBtn.textContent = "X";
   removeBtn.classList.add("remove-btn");
+  search.value = "";
+
+  removeBtn.addEventListener("click", () => {
+    city.remove();
+  });
 };
