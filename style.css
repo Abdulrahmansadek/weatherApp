@@ -85,7 +85,6 @@ body {
   overflow: scroll;
   font-size: 18px;
   font-weight: 900;
-  position: relative;
 }
 
 .hourlyDegree {
@@ -97,6 +96,7 @@ body {
   align-items: center;
   padding: 15px;
   border-radius: 10px;
+  position: relative;
 }
 
 .hourlyDegree img {
