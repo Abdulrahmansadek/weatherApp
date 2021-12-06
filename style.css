@@ -16,8 +16,8 @@ body {
   background-size: cover;
   z-index: -1;
   margin: 0 auto;
-  width: 650px;
   font-weight: bold;
+  width: 650px;
 }
 .cloudy-day {
   background-image: url("assets/peyman-farmani-c-lVI683QwU-unsplash.jpg");
@@ -43,7 +43,7 @@ body {
   width: 600px;
   height: 450px;
   border-radius: 20px;
-  margin: 100px 0 20px 0;
+  margin: 60px 0 20px 0;
   position: relative;
   background-color: rgba(194, 193, 193, 0.534);
   padding: 15px;
@@ -63,7 +63,6 @@ body {
   overflow: scroll;
   padding: 15px;
   margin-bottom: 10px;
-  z-index: 1;
   background-color: rgba(194, 193, 193, 0.548);
 }
 
@@ -182,9 +181,10 @@ body {
   position: absolute;
   overflow: scroll;
   width: 400px;
-  left: 395px;
-  height: 1140px;
-  border-radius: 3px;
+  height: 1030px;
+  top: 0px;
+  left: 0px;
+  border-radius: 20px;
   z-index: 1;
   background-color: whitesmoke;
 }
@@ -196,7 +196,7 @@ body {
 .search-bar input {
   width: 300px;
   height: 35px;
-  border-radius: 3px;
+  border-radius: 20px;
   margin: 15px;
 }
 .search-bar button {
@@ -254,41 +254,6 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .weekContainer {
-    width: 500px;
-    height: 500px;
-    border-radius: 20px;
-    overflow: scroll;
-    padding: 15px;
-    margin-bottom: 10px;
-    z-index: 1;
-    background-color: rgba(194, 193, 193, 0.548);
-  }
-  .todayContainer {
-    width: 500px;
-    height: 450px;
-    border-radius: 20px;
-    margin: 100px 0 20px 0;
-    position: relative;
-    background-color: rgba(194, 193, 193, 0.534);
-    padding: 15px;
-    z-index: 1;
-    font-size: 13px;
-  }
-  .info ul {
-    padding: 3px;
-    height: 70px;
-    border-radius: 10px;
-  }
-  .menu-btn {
-    position: absolute;
-    border: none;
-    left: 40px;
-    margin-top: 10px;
-    background-color: inherit;
-  }
-}
-@media only screen and (max-width: 600px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -297,7 +262,6 @@ body {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
     margin: 0 auto;
     width: 550px;
     font-weight: bold;
@@ -309,7 +273,6 @@ body {
     overflow: scroll;
     padding: 15px;
     margin-bottom: 10px;
-    z-index: 1;
     background-color: rgba(194, 193, 193, 0.548);
   }
   .todayContainer {
@@ -320,7 +283,6 @@ body {
     position: relative;
     background-color: rgba(194, 193, 193, 0.534);
     padding: 15px;
-    z-index: 1;
     font-size: 13px;
   }
   .info ul {
@@ -330,9 +292,11 @@ body {
   }
   .menu-page {
     position: absolute;
+    overflow: scroll;
     width: 400px;
-    left: 10px;
-    height: 1140px;
+    height: 300px;
+    top: 0px;
+    left: 0px;
     border-radius: 3px;
     z-index: 1;
     background-color: whitesmoke;
@@ -349,9 +313,11 @@ body {
   }
   .menu-page {
     position: absolute;
+    overflow: scroll;
     width: 400px;
-    left: 60px;
-    height: 1140px;
+    height: 300px;
+    top: 0px;
+    left: 0px;
     border-radius: 3px;
     z-index: 1;
     background-color: whitesmoke;

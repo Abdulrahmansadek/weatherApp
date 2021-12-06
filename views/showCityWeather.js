@@ -1,11 +1,12 @@
-import { container } from "../utils/constants.js";
+import { container, todayContainer } from "../utils/constants.js";
 
 export const menuPage = document.createElement("div");
-container.appendChild(menuPage);
+todayContainer.appendChild(menuPage);
 menuPage.className = "menu-page";
 
 const pageContainer = document.createElement("div");
 menuPage.appendChild(pageContainer);
+menuPage.setAttribute("data-aos", "fade-left");
 pageContainer.classList.add("page-container");
 const searchBar = document.createElement("div");
 pageContainer.appendChild(searchBar);

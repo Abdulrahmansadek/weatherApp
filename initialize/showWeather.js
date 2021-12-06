@@ -10,8 +10,9 @@ import { hour } from "../components/updateTimeAndDate.js";
 import { menuPage } from "../views/showCityWeather.js";
 
 const menuBtn = document.createElement("button");
-menuPage.classList.add("close");
+menuBtn.addEventListener("click", menuBar);
 
+menuPage.classList.add("close");
 container.appendChild(menuBtn);
 menuBtn.classList.add("menu-btn");
 menuBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-list" viewBox="0 0 16 16">
@@ -61,5 +62,3 @@ export const showWeather = function (data) {
     container.classList.add("rainy-day");
   }
 };
-
-menuBtn.addEventListener("click", menuBar);
