@@ -21,15 +21,19 @@ search.addEventListener("keypress", (e) => {
 
     const citiesWeather = function () {
       const cityWeather = `https://api.openweathermap.org/data/2.5/weather?&units=metric&q=${searchCity}&appid=${apiKey}`;
-      fetch(cityWeather)
-        .then((res) => res.json())
-        .then((data) => {
-          showCityWeather(data);
-        })
-        .catch((err) => {
-          errorPage(err);
-        });
+      fetch(cityWeather).then((res) => {
+        if (!res.ok) throw new Error(`${res.status}`);
+        res
+          .json()
+          .then((data) => {
+            showCityWeather(data);
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      });
     };
+
     citiesWeather();
   }
 });

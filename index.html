@@ -31,5 +31,15 @@
     <script>
       AOS.init();
     </script>
+    <script>
+      function searchTerm() {
+        const input = document.getElementById("search-city");
+        const autocomplete = new google.maps.places.Autocomplete(input);
+      }
+    </script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH0i9bYnjq5_Vpa7Yj2WCW-f4JBEKqBwU&libraries=places&callback=searchTerm"
+    ></script>
   </body>
 </html>
