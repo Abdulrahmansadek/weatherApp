@@ -3,7 +3,6 @@ import {
   location,
   container,
   todayContainer,
-  weekContainer,
 } from "../utils/constants.js";
 import { menuBar } from "../listeners/menuPage.js";
 import { hour } from "../components/updateTimeAndDate.js";
@@ -21,14 +20,12 @@ menuBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="
 
 export const showWeather = function (data) {
   const { timezone } = data;
-  const { temp, feels_like, humidity, pressure, wind_speed, sunrise, sunset } =
-    data.current;
-  const { icon, main } = data.current.weather[0];
+  const { temp, feels_like, pressure, sunset } = data.current;
+  const { icon, main, description } = data.current.weather[0];
 
   const convertSunSet = sunset * 1000;
   const setTimeOfSunRise = new Date(convertSunSet);
   const sunSetTime = setTimeOfSunRise.getHours();
-  console.log(sunSetTime, hour, main);
 
   location.textContent = timezone;
   const tempEl = Math.floor(temp);
@@ -40,7 +37,7 @@ export const showWeather = function (data) {
     <span class="degree"><h2>${tempEl}º</h2> </span>
    
     <span class='info'> <ul>
-    <li>Weather  : ${main}</li>
+    <li>Weather  : ${description}</li>
     <li>Pressure : ${pressure}</li>
     <li>Feels like : ${feelsLike} º</li>
     
@@ -56,10 +53,10 @@ export const showWeather = function (data) {
     container.classList.add("rainy-day");
     todayContainer.classList.add("darkGrey");
   } else if (main === "Clear" && hour <= sunSetTime) {
-    container.classList.add("clear-day ");
-  } else if (main === "Clear" && hour > sunSetTime) {
-    container.classList.add("clear-night ");
+    container.classList.add("cloudy-night");
   } else if (main === "Drizzle") {
     container.classList.add("rainy-day");
+  } else {
+    container.classList.add("cloudy-night");
   }
 };

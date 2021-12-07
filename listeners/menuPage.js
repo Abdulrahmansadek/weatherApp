@@ -1,5 +1,4 @@
-import { container, apiKey } from "../utils/constants.js";
-import { errorPage } from "../views/errorPage.js";
+import { apiKey } from "../utils/constants.js";
 import {
   showCityWeather,
   search,
@@ -22,7 +21,8 @@ search.addEventListener("keypress", (e) => {
     const citiesWeather = function () {
       const cityWeather = `https://api.openweathermap.org/data/2.5/weather?&units=metric&q=${searchCity}&appid=${apiKey}`;
       fetch(cityWeather).then((res) => {
-        if (!res.ok) throw new Error(alert("enter valid city"));
+        if (!res.ok)
+          throw new Error(alert("enter valid city"), (search.value = ""));
         res
           .json()
           .then((data) => {

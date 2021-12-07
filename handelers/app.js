@@ -1,13 +1,5 @@
-import {
-  degree,
-  todayDegree,
-  weeks,
-  days,
-  apiKey,
-  imgWeather,
-} from "../utils/constants.js";
-import { weekDays } from "../assets/data.js";
-import { update } from "../components/updateTimeAndDate.js";
+import { apiKey } from "../utils/constants.js";
+
 import { showWeather } from "../initialize/showWeather.js";
 import { showHourlyWeather } from "../views/showHourlyWeather.js";
 import { showDailyWeather } from "../views/showDailyWeather.js";
