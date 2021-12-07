@@ -17,3 +17,4 @@ the app is responsive :
 
 <img width="344" alt="Screenshot 2021-12-07 at 18 17 52" src="https://user-images.githubusercontent.com/85104423/145080107-a798f7bd-5ad5-4fd1-8ad9-90445d5dab9b.png">   <img width="344" alt="Screenshot 2021-12-07 at 18 16 51" src="https://user-images.githubusercontent.com/85104423/145080349-1ec5c9d2-812a-452b-85ed-19c17c35da36.png">
 
+the user can search for country :
