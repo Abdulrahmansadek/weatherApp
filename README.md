@@ -30,4 +30,6 @@ in this weather App i used https://openweathermap.org/api .
  <img width="1399" alt="Screenshot 2021-12-07 at 18 58 07" src="https://user-images.githubusercontent.com/85104423/145081912-51b71a05-b673-44cc-aea7-c86e3352b5eb.png">
  
  # Extra info
+ <img width="1414" alt="Screenshot 2021-12-07 at 18 59 39" src="https://user-images.githubusercontent.com/85104423/145082053-acdaabb2-5fce-4485-9014-b4051228cac2.png">
+
  
