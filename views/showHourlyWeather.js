@@ -22,8 +22,8 @@ export const showHourlyWeather = function (data) {
     const { icon } = hourlyTemp.weather[0];
     const tempEl = Math.floor(temp);
     const x = dt * 1000;
-    var data2 = new Date(x);
-    var h = data2.getHours();
+    const data2 = new Date(x);
+    const h = data2.getHours();
 
     degree.innerHTML += ` <div class="hourlyDegree">
           <span id="time">${h}:00</span>
