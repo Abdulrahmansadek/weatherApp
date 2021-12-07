@@ -23,6 +23,11 @@ in this weather App i used https://openweathermap.org/api .
 
 
  ### beside the currecnt weather the app shows the hourly and the daily weather 
- 
+ # Hourly
  <img width="1333" alt="Screenshot 2021-12-07 at 18 57 43" src="https://user-images.githubusercontent.com/85104423/145081896-9938d858-8eea-4c77-a78a-81c3b73192b1.png">
+ 
+ # Daily
+ <img width="1399" alt="Screenshot 2021-12-07 at 18 58 07" src="https://user-images.githubusercontent.com/85104423/145081912-51b71a05-b673-44cc-aea7-c86e3352b5eb.png">
+ 
+ # Extra info
  
