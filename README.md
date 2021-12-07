@@ -22,5 +22,5 @@ in this weather App i used https://openweathermap.org/api .
 <img width="1410" alt="Screenshot 2021-12-07 at 18 54 15" src="https://user-images.githubusercontent.com/85104423/145081249-d5574b0e-ea9d-4ff9-908c-88876db460d1.png">
 
 
- beside the currecnt weather the app shows the hourly and the daily weather 
+ ### beside the currecnt weather the app shows the hourly and the daily weather 
  
