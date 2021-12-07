@@ -32,6 +32,7 @@ export const showWeather = function (data) {
 
   location.textContent = timezone;
   const tempEl = Math.floor(temp);
+  const feelsLike = Math.floor(feels_like);
   imgWeather.innerHTML = `
   
    <span> <img src="http://openweathermap.org/img/wn/${icon}@2x.png" alt="" /></span>
@@ -41,7 +42,7 @@ export const showWeather = function (data) {
     <span class='info'> <ul>
     <li>Weather  : ${main}</li>
     <li>Pressure : ${pressure}</li>
-    <li>Feels like : ${feels_like} º</li>
+    <li>Feels like : ${Math.floor(feelsLike)} º</li>
     
     </ul> </span>`;
 
