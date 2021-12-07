@@ -15,3 +15,5 @@ in this weather App i used https://openweathermap.org/api .
 # Must have:
 the app is responsive :
 
+<img width="344" alt="Screenshot 2021-12-07 at 18 17 52" src="https://user-images.githubusercontent.com/85104423/145080107-a798f7bd-5ad5-4fd1-8ad9-90445d5dab9b.png">
+
