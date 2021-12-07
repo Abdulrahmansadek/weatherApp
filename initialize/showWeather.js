@@ -49,14 +49,11 @@ export const showWeather = function (data) {
     container.classList.add("cloudy-day");
   } else if (main === "Clouds" && hour >= sunSetTime) {
     container.classList.add("cloudy-night");
-  } else if (main === "Rain" && hour <= sunSetTime) {
-    container.classList.add("rainy-day");
-    todayContainer.classList.add("darkGrey");
   } else if (main === "Clear" && hour <= sunSetTime) {
-    container.classList.add("cloudy-night");
-  } else if (main === "Drizzle") {
+    container.classList.add("clear-day");
+  } else if (main === "Drizzle" || main === "Rain") {
     container.classList.add("rainy-day");
-  } else {
+  } else if (main === "Clear" && hour >= sunSetTime) {
     container.classList.add("cloudy-night");
   }
 };

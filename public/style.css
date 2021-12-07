@@ -6,20 +6,24 @@ body {
   box-sizing: border-box;
 }
 .cloudy-day {
-  background-image: url("assets/peyman-farmani-c-lVI683QwU-unsplash.jpg");
+  background-image: url("images/peyman-farmani-c-lVI683QwU-unsplash.jpg");
   font-weight: 900;
   background-size: cover;
 }
+.clear-day {
+  background-image: url("images/grooveland-designs-zjoydJb17mE-unsplash.jpg");
+  background-size: cover;
+}
 .cloudy-night {
-  background-image: url("assets/night.webp");
+  background-image: url("images/night.webp");
 }
 .rainy-day {
-  background-image: url("assets/xianyu-hao-n6pu9ZDOaN4-unsplash.jpg");
+  background-image: url("images/xianyu-hao-n6pu9ZDOaN4-unsplash.jpg");
   background-size: cover;
 }
 
 .clear-night {
-  background-image: url("assets/night.webp");
+  background-image: url("images/night.webp");
 }
 
 .container {

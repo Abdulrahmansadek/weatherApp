@@ -1,5 +1,5 @@
 import { dateAndTime } from "../utils/constants.js";
-import { months, weekDays } from "../assets/data.js";
+import { months, weekDays } from "../public/data.js";
 
 const time = new Date();
 const month = time.getMonth();
