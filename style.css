@@ -18,9 +18,6 @@ body {
   background-size: cover;
 }
 
-.clear-day {
-  background-image: url("assets/after_noon.png.webp");
-}
 .clear-night {
   background-image: url("assets/night.webp");
 }
@@ -262,6 +259,9 @@ body {
   background-color: inherit;
   color: red;
   cursor: pointer;
+}
+table tr th {
+  width: 18px;
 }
 
 @media only screen and (max-width: 600px) {

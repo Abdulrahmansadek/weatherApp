@@ -1,4 +1,4 @@
-import { container, todayContainer } from "../utils/constants.js";
+import { todayContainer } from "../utils/constants.js";
 
 export const menuPage = document.createElement("div");
 todayContainer.appendChild(menuPage);
