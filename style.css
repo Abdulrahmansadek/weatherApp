@@ -5,20 +5,6 @@ body {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-  margin: 0 auto;
-  font-weight: bold;
-  width: 100%;
-}
 .cloudy-day {
   background-image: url("assets/peyman-farmani-c-lVI683QwU-unsplash.jpg");
   font-weight: 900;
@@ -37,6 +23,20 @@ body {
 }
 .clear-night {
   background-image: url("assets/night.webp");
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  margin: 0 auto;
+  font-weight: bold;
+  width: 100%;
 }
 
 .todayContainer {
@@ -88,6 +88,18 @@ body {
 
 .menu-btn:hover {
   cursor: pointer;
+}
+.info {
+  padding: 3px;
+  height: 150px;
+  width: 400px;
+  line-height: 30px;
+  margin-left: 200px;
+  border-radius: 10px;
+}
+.info ul {
+  list-style: none;
+  text-align: center;
 }
 
 .location-date {
@@ -147,19 +159,6 @@ body {
 }
 .days span {
   width: 90px;
-}
-
-.info {
-  padding: 3px;
-  height: 150px;
-  width: 200px;
-  line-height: 30px;
-  margin-left: 200px;
-  border-radius: 10px;
-  background-color: rgba(192, 189, 189, 0.562);
-}
-.info ul {
-  list-style: none;
 }
 
 #error {

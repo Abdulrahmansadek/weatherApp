@@ -39,10 +39,10 @@ export const showWeather = function (data) {
     <span class="degree"><h2>${tempEl}º</h2> </span>
    
     <span class='info'> <ul>
-    <li>Humidity : ${humidity} %</li>
+    <li>${main}</li>
     <li>Pressure : ${pressure}</li>
     <li>Feels like : ${feels_like} º</li>
-    <li>Wind Speed : ${wind_speed}</li>
+    
     </ul> </span>`;
 
   if (main === "Clouds" && hour <= sunSetTime) {
