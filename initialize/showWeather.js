@@ -42,7 +42,7 @@ export const showWeather = function (data) {
     <span class='info'> <ul>
     <li>Weather  : ${main}</li>
     <li>Pressure : ${pressure}</li>
-    <li>Feels like : ${Math.floor(feelsLike)} º</li>
+    <li>Feels like : ${feelsLike} º</li>
     
     </ul> </span>`;
 
