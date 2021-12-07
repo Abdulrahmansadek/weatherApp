@@ -21,7 +21,6 @@ searchBar.appendChild(closeBtn);
 closeBtn.textContent = "X";
 
 export const showCityWeather = (data) => {
-  console.log(data);
   const citiesContainer = document.createElement("div");
   pageContainer.appendChild(citiesContainer);
   citiesContainer.classList.add("cities-container");

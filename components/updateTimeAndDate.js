@@ -3,7 +3,7 @@ import { months, weekDays } from "../assets/data.js";
 
 const time = new Date();
 const month = time.getMonth();
-const day = time.getDate();
+const day = time.getDay();
 export const hour = time.getHours();
 const minutes = time.getMinutes();
 export const update = setInterval(() => {

@@ -17,12 +17,12 @@ body {
   z-index: -1;
   margin: 0 auto;
   font-weight: bold;
-  width: 650px;
+  width: 100%;
 }
 .cloudy-day {
   background-image: url("assets/peyman-farmani-c-lVI683QwU-unsplash.jpg");
   font-weight: 900;
-  background-position: top;
+  background-size: cover;
 }
 .cloudy-night {
   background-image: url("assets/night.webp");
@@ -40,7 +40,7 @@ body {
 }
 
 .todayContainer {
-  width: 600px;
+  width: 800px;
   height: 450px;
   border-radius: 20px;
   margin: 60px 0 20px 0;
@@ -57,13 +57,37 @@ body {
 
 .weekContainer {
   position: relative;
-  width: 600px;
+  width: 800px;
   height: 500px;
   border-radius: 20px;
   overflow: scroll;
   padding: 15px;
   margin-bottom: 10px;
   background-color: rgba(194, 193, 193, 0.548);
+}
+.extra-info {
+  position: relative;
+  width: 800px;
+  height: 300px;
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: rgba(194, 193, 193, 0.548);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.menu-btn {
+  position: absolute;
+  border: none;
+  left: 320px;
+  top: 20px;
+  margin-top: 10px;
+  background-color: inherit;
+}
+
+.menu-btn:hover {
+  cursor: pointer;
 }
 
 .location-date {
@@ -143,19 +167,6 @@ body {
   text-align: center;
 }
 
-.menu-btn {
-  position: absolute;
-  border: none;
-  left: 420px;
-  top: 20px;
-  margin-top: 10px;
-  background-color: inherit;
-}
-
-.menu-btn:hover {
-  cursor: pointer;
-}
-
 .left-arrow {
   color: black;
   padding: 15px;
@@ -209,6 +220,7 @@ body {
 }
 .close {
   display: none;
+  background-color: inherit;
 }
 
 .page-container {
@@ -251,18 +263,6 @@ body {
   background-color: inherit;
   color: red;
   cursor: pointer;
-}
-.extra-info {
-  position: relative;
-  width: 600px;
-  height: 300px;
-  border-radius: 20px;
-  padding: 15px;
-  margin-bottom: 10px;
-  background-color: rgba(194, 193, 193, 0.548);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
 }
 
 @media only screen and (max-width: 600px) {

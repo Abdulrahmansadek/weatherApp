@@ -1,7 +1,6 @@
 import { container } from "../utils/constants.js";
 
 export const extraInfo = (data) => {
-  console.log(data);
   const { uvi, sunrise, sunset, wind_speed, humidity } = data.current;
 
   const getTime = function (time) {
