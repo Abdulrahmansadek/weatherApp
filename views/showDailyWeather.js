@@ -4,7 +4,7 @@ export const showDailyWeather = function (data) {
   const daily = data.daily;
   daily.forEach((d) => {
     const { day, night } = d.temp;
-    const day1 = getDayName(d.dt, "nl-NL");
+    const day1 = getDayName(d.dt, "en-EN  ");
     const { icon } = d.weather[0];
 
     const dayEl = Math.floor(day);

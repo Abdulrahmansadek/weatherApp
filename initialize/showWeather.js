@@ -39,7 +39,7 @@ export const showWeather = function (data) {
     <span class="degree"><h2>${tempEl}º</h2> </span>
    
     <span class='info'> <ul>
-    <li>${main}</li>
+    <li>Weather  : ${main}</li>
     <li>Pressure : ${pressure}</li>
     <li>Feels like : ${feels_like} º</li>
     
