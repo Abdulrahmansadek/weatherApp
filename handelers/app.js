@@ -12,6 +12,7 @@ import { showWeather } from "../initialize/showWeather.js";
 import { showHourlyWeather } from "../views/showHourlyWeather.js";
 import { showDailyWeather } from "../views/showDailyWeather.js";
 import { errorPage } from "../views/errorPage.js";
+import { extraInfo } from "../views/extraInfo.js";
 
 export const getWeather = function () {
   navigator.geolocation.getCurrentPosition((position) => {
@@ -22,6 +23,7 @@ export const getWeather = function () {
       .then((data) => {
         showWeather(data);
         showDailyWeather(data);
+        extraInfo(data);
       })
       .catch((err) => {
         errorPage(err);
